@@ -2,8 +2,8 @@
 font-family: 'Poppins', sans-serif; */
 
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --branding-color: #243f3e;
+  --secondary-color: #d6d8d1;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -35,6 +35,9 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+}
+.navbar {
+  background-color: var(--secondary-color);
 }
 .hero {
   background-color: var(--secondary-color);
@@ -94,11 +97,28 @@ p {
   padding: 15px 30px;
   text-decoration: none;
 }
+.btn-branding-outline:hover {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  text-decoration: none;
+}
 .about-me-image {
   border-radius: 10px;
+  width: 300px;
 }
 .project-description {
   padding: 120px 60px;
+}
+.netlify-link a {
+  text-decoration: none;
+  color: var(--branding-color);
+}
+.netlify-link a:hover {
+  color: var(--secondary-color);
 }
 
 footer .contact-box {
@@ -132,6 +152,13 @@ footer .social-link a:hover {
   color: white;
   background: var(--branding-color);
 }
+footer .open-source-link {
+  text-decoration: none;
+  color: var(--branding-color);
+}
+footer .open-source-link:hover {
+  color: var(--secondary-color);
+}
 
 @media (max-width: 900px) {
   h1 {
@@ -151,5 +178,9 @@ footer .social-link a:hover {
   .content {
     text-align: center;
     padding: 0px;
+  }
+  .about-me-image {
+    display: block;
+    margin: 0 auto;
   }
 }
